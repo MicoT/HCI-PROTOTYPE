@@ -17,7 +17,7 @@
         <div class="container-fluid">
             
             <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" width="50" height="50"></a>
-            <a class="navbar-brand text-white" href="#">COVID 19 HELPER</a>
+            <a class="navbar-brand text-white" href="#" style="margin-right: 60px;">COVID 19 HELPER</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,17 +42,17 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                       <li><a class="dropdown-item" href="#">Team</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Repository Link</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">References</a></li>
                     </ul>
                   </li>
             </ul>
             <hr>
-            <form class="d-flex">
+            <form class="d-flex" action="dashboard.html">
                 <input class="form-control me-2" type="text" placeholder="Username" aria-label="Username">
                 <input class="form-control me-2" type="password" placeholder="Password" aria-label="Password">
-                <button class="btn btn-outline-dark btn-close-white" type="submit">Login</button>
+                <input class="btn btn-outline-dark btn-close-white" type="submit" value="Log In">
             </form>
             </div>
         </div>
@@ -65,7 +65,12 @@
             <div class="row">
                 <div class="text-center middle">
                     <h2 class="text-color margin-hori" style="font-size: 3vw;">Stay informed and vaccinated today!</h2>
-                    <p class="text-color margin-hori" style="font-size: 3vw;"><span class="text-danger"><button class="btn btn-outline-danger btn-close-white" type="submit" style="font-size: 3vw;">Sign Up</button></span> now and help yourself in keeping not only your health okay but everyone else!</p>
+                    <p class="text-color margin-hori" style="font-size: 3vw;"><span class="text-danger">
+                        <button type="button" class="btn btn-outline-dark btn-close-white" style="font-size: 2vw;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Sign Up
+                          </button>
+                        </span> now and help yourself in keeping not only your health okay but everyone else!
+                    </p>
                     
                 </div>
             </div>
@@ -79,5 +84,36 @@
         <hr>
         <iframe src="https://public.domo.com/cards/dG1jy" width="900" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade modal-fullscreen-lg-down" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="exampleModalLabel">Register your account!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Username" aria-label="sign-up">
+                    <input class="form-control me-2" type="password" placeholder="Password" aria-label="sign-up">
+                </form>
+                <form class="d-flex" style="margin-top: 10px;">
+                    <input class="form-control me-2" type="text" placeholder="Address" aria-label="sign-up">
+                    <input class="form-control me-2" type="number" maxlength="11" placeholder="Contact Number" aria-label="sign-up">
+                </form>
+            </div>
+            <hr class="text-black">
+            <span class="help-block text-black" style="margin: 20px;">By clicking Create my account, you agree to our Terms and that you have read our Data Use Policy, including our Cookie Use.</span>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <form action="dashboard.html">
+                <input type="submit" class="btn btn-primary" value="Create my account" />
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
 </body>
 </html>
