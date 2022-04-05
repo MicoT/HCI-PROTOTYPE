@@ -28,11 +28,15 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item ">
-                    <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                    <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
                     </li>
                     <hr>
                     <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Vaccination Areas</a>
+                    <a class="nav-link text-white" href="vac-areas.html">Vaccination Areas</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="news.html">News</a>
                     </li>
                     <hr>
                     <li class="nav-item dropdown">
@@ -66,5 +70,19 @@
             </div>
             <hr>
         </nav>
+        <div class="content" style="flex-direction: column; text-align: center;">
+            <h2>Instructions</h2>
+            <P>Press Ctrl + F to search for your location on the worksheet below!</P>
+        </div>
+        <div class="content">
+            <iframe width="700" height="780" frameborder="0" scrolling="no" src="https://malayancollegesmindanaoo365-my.sharepoint.com/personal/jmtongco_mcm_edu_ph/_layouts/15/Doc.aspx?sourcedoc={d093c57f-ae74-4e57-b2a3-e2f21b0828f2}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+        </div>
+        <script>
+            function myFunction(x) {
+  var att = document.querySelector("iframe[id=iframe2]").getAttribute(x);
+  
+  alert(att);
+}
+        </script>
     </body>
 </html>
