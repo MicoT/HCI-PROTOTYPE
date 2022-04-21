@@ -2,7 +2,7 @@
     color: white;
 }
 hr{
-    background-color: gray;
+    background-color: #808080;
     border: 0;
     
 }
@@ -15,7 +15,7 @@ hr{
     object-fit: cover;
 }
 .text-color{
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 .margin-hori{
     font-weight: bold;
@@ -31,7 +31,7 @@ hr{
 }
 .content{
     padding: 30px;
-    background-image: linear-gradient(to bottom right,rgb(123, 50, 207),rgb(99, 93, 192),rgb(123, 50, 207));
+    background-image: linear-gradient(to bottom right,#7c33cf,#635dc0,#7b32cf);
     display: flex;
     justify-content: center;
 }
@@ -165,7 +165,7 @@ hr{
   height: 300px;
 }
 .floating-container:hover .floating-button {
-  box-shadow: 0 10px 25px rgba(168, 44, 240, 0.6);
+  box-shadow: 0 10px 25px #a82cf099;
   -webkit-transform: translatey(5px);
           transform: translatey(5px);
   -webkit-transition: all 0.3s;
