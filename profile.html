@@ -90,7 +90,40 @@
           <hr class="text-black">
           <p class="card-text text-black">Contact Number: 000000000000</p>
           <hr class="text-black">
-          <a href="#" class="btn btn-primary">Edit Profile</a>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Update Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-fullscreen-lg-down" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="exampleModalLabel">Update Your Profile.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Username" aria-label="sign-up">
+                <input class="form-control me-2" type="password" placeholder="Password" aria-label="sign-up">
+            </form>
+            <form class="d-flex" style="margin-top: 10px;">
+              <input class="form-control me-2" type="text" placeholder="Email" aria-label="sign-up">
+          </form>
+            <form class="d-flex" style="margin-top: 10px;"></form>
+                <input class="form-control me-2" type="text" placeholder="Address" aria-label="sign-up">
+            </form>
+            <form class="d-flex" style="margin-top: 10px;">
+                <input class="form-control me-2" type="number" maxlength="11" placeholder="Contact Number" aria-label="sign-up">
+            </form>
+        </div>
+        <hr class="text-black">
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <form action="dashboard.html">
+            <input type="submit" class="btn btn-primary" value="Update" />
+            </form>
         </div>
       </div>
     </div>

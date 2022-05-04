@@ -89,14 +89,24 @@
                 <td>Phizer</td>
                 <td>01/01/2021</td>
                 <td>Bangkal</td>
-                <td><i class="fa-solid fa-xmark"></i></td>
+                <td><button type="button" class="btn btn-outline-dark btn-close-white" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
+                  <i class="fa-solid fa-marker"></i>
+                </button></td>
+                <td><button type="button" class="btn btn-outline-dark btn-close-white" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+                  <i class="fa-solid fa-xmark"></i>
+                </button></td>
                 </tr>
                 <tr>
                 <th scope="row">2</th>
                 <td>Phizer</td>
-                <td>01/01/2021</td>
+                <td>22/04/2021</td>
                 <td>Bangkal</td>
-                <td><i class="fa-solid fa-xmark"></i></td>
+                <td><button type="button" class="btn btn-outline-dark btn-close-white" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
+                  <i class="fa-solid fa-marker"></i>
+                </button></td>
+                <td><button type="button" class="btn btn-outline-dark btn-close-white" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+                  <i class="fa-solid fa-xmark"></i>
+                </button></td>
                 </tr>
             </tbody>
             </table>
@@ -109,6 +119,23 @@
     <div class="content">
         <hr>
         <iframe src="https://public.domo.com/cards/dG1jy" width="900" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade modal-fullscreen-lg-down" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-black" id="exampleModalLabel">Delete Vaccination?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <form action="dashboard.html">
+              <input type="submit" class="btn btn-primary" value="Delete" />
+              </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Modal -->
@@ -137,6 +164,33 @@
           </div>
         </div>
     </div>
+
+    <div class="modal fade modal-fullscreen-lg-down" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-black" id="exampleModalLabel">Edit Vaccination</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Brand" aria-label="Tracker">
+                  <input class="form-control me-2" type="text" placeholder="Location" aria-label="Tracker">
+              </form>
+              <form class="d-flex" style="margin-top: 10px;">
+                  <input class="form-control me-2" type="date" placeholder="Date of Vaccination" aria-label="Tracker">
+              </form>
+          </div>          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <form action="#">
+              <input type="submit" class="btn btn-primary" value="Edit" />
+              </form>
+          </div>
+        </div>
+      </div>
+  </div>
+
       <!-- footer starts here -->
     <div class="main-footer">
         <h6><i class="fa-regular fa-copyright"></i>   BMM SOLUTIONS</h6>
